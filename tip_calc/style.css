@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #d9a7c7, #fffcdc);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    position: relative;
+    min-width: 20rem;
+    max-width: 40rem;
+    width: 23rem;
+    height: 450px;
+    border-radius: 10px;
+    background-color: rgb(245, 210, 210);
+    box-shadow: 0 0 14px 6px rgba(0,0,0,0.2);
+}
+h1{
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    background-color: #222;
+    color: #fff;
+    border-radius: 10px;
+}
+#calculator{
+    position: relative;
+    height: 70%;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+form:first-child{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.label{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+input{
+    padding: 8px;
+    font-family: 'Poppins';
+    font-size: 0.7rem;
+    width: 75%;
+    border-radius: 10px;
+    border: none;
+}
+#serviceQual{
+    padding: 8px;
+    font-family: 'Poppins';
+    font-size: 0.7rem;
+    width: 75%;
+    border-radius: 10px;
+    border: none;
+}
+#calculate{
+    padding: 10px;
+    width: 60%;
+    display: block;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    font-size: 1rem;
+    font-family: 'Poppins';
+}
+#calculate:hover{
+    background-color: #222;
+    color: #fff;
+    transition: all 0.5s;
+}
+#totalTip{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: -10px;
+    font-family: 'Poppins';
+    position: relative;
+}
+#totalTip::before{
+    content: "Tip Amount";
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    text-transform: capitalize;
+}
+#totalTip small{
+    font-weight: bold;
+}
